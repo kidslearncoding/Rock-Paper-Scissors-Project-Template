@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+
+.page-container .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.page-container .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.page-container .line {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    height: 100%;
+    border-right: 2px dashed black;
+}
+
+.selection-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24%;
+    padding: 14px;
+    background-color: black;
+}
+
+.selection-menu .button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selection-menu .button-container button {
+    background-color: transparent;
+    border: 2px solid yellow;
+    color: yellow;
+    margin-bottom: 12px;
+    height: 32px;
+    cursor: pointer;
+    width: 32%;
+}
+
+.selection-menu h1 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.result {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 40%;
+    right: 40%;
+    background-color: white;
+    border: 2px dashed black;
+    z-index: 999;
+    width: 400px;
+    height: 200px;
+}
+
+.choice-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px;
+    width: 500px;
+    height: 400px;
+    background-color: white;
+
+    box-shadow: 5px 6px 107px 12px rgba(0,0,0,0.37);
+    -webkit-box-shadow: 5px 6px 107px 12px rgba(0,0,0,0.37);
+    -moz-box-shadow: 5px 6px 107px 12px rgba(0,0,0,0.37);
+}
+
+.choice-box img {
+    width: 50%;
+}
